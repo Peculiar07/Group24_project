@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Team Alpha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Team Alpha</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Hero Section -->
+  <section class="welcome-section">
+    <div class="welcome-text">
+      <h2 class="animated-title">Welcome to <span class="highlight">Team Alpha</span></h2>
+      <p class="animated-paragraph">
+        Empowering communities with modern agriculture, clean energy, and sustainable innovation.
+        From high-yield greenhouses to solar-powered farms, we build the future with green solutions
+        tailored for real impact.
+      </p>
+      <a href="services.html" class="cta-button">Explore Our Services</a>
+    </div>
+
+    <div class="welcome-image">
+      <img src="images/welcome.jpg" alt="Welcome Green Farm" />
+    </div>
+  </section>
+
+  <!-- Floating Icons -->
+  <div class="floating-icons">
+    <a href="https://chat.whatsapp.com/IgcXfUsO9vSHvb2dPldP9K?mode=r_c" target="_blank" title="Chat on WhatsApp">🟢</a>
+    <a href="gallery.html" title="Gallery Page">🖼️</a>
+    <a href="contact.html" title="Contact Us">📧</a>
+  </div>
+
+  <!-- Popup Modal -->
+<div class="popup-modal" id="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <h3>Welcome to Team Alpha 🌱</h3>
+    <p>Check out our <a href="services.html">services page</a> for greenhouses, farming, and solar panels!</p>
+  </div>
+</div>
+
+
+  <footer>
+    &copy; 2025 Team Alpha | Group 24 | 
+    <a href="https://chat.whatsapp.com/IgcXfUsO9vSHvb2dPldP9K?mode=r_c" style="color:#fff;">WhatsApp Us</a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Show popup after 5 seconds
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById('popup').style.display = 'flex';
+      }, 5000);
+    };
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
